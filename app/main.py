@@ -40,32 +40,32 @@ class Distance:
             return self.km < other.km
         if isinstance(other, int | float):
             return self.km < other
-        return False
+        return NotImplemented
 
     def __le__(self, other: Distance | int | float) -> bool:
         if isinstance(other, Distance):
             return self.km <= other.km
         if isinstance(other, int | float):
             return self.km <= other
-        return False
+        return NotImplemented
 
     def __gt__(self, other: Distance | int | float) -> bool:
         if isinstance(other, Distance):
             return self.km > other.km
         if isinstance(other, int | float):
             return self.km > other
-        return False
+        return NotImplemented
 
     def __ge__(self, other: Distance | int | float) -> bool:
         if isinstance(other, Distance):
             return self.km >= other.km
         if isinstance(other, int | float):
             return self.km >= other
-        return False
+        return NotImplemented
 
     def __eq__(self, other: Distance | int | float) -> bool:
         if isinstance(other, Distance):
             return self.km == other.km
         if isinstance(other, int | float):
             return self.km == other
-        return False
+        return NotImplemented
